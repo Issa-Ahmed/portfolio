@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Smooth Scrolling and Expanding with GSAP</title>
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        overflow-x: hidden; /* Hide horizontal overflow to prevent unwanted scrollbars */
+    }
+
+    .section {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f0f0f0;
+    }
+
+    .container {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* max-width: 600px; */
+        height: 100vh;
+    }
+    .expanding-div {
+        height: 100%;
+        width: 400px; /* Start with a smaller width */
+        background-color: #ccc;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+</style>
+</head>
+<body>
+    <div class="section" id="section1">
+        <h1>Section 1</h1>
+    </div>
+
+    <div class="section" id="section2">
+        <h1>Section 2</h1>
+    </div>
+
+    <div class="section" id="section3">
+        <h1>Section 3</h1>
+    </div>
+
+    <div class="container">
+        <div class="expanding-div" id="expandingDiv"></div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/ScrollTrigger.min.js"></script>
+    <script>
+        gsap.registerPlugin(ScrollTrigger);
+
+        // Expand the div when it comes into view
+        const expandingDiv = document.getElementById('expandingDiv');
+
+        gsap.to(expandingDiv, {
+            width: "100%", // Expand to 100% width
+            scrollTrigger: {
+                trigger: expandingDiv,
+                start: "top 90%", // Start the animation when 90% of the div is in view
+                end: "bottom 10%", // End the animation when 10% of the div is in view
+                scrub: true // Smoothly scrub through animations
+            }
+        });
+    </script>
+</body>
+</html>
