@@ -449,25 +449,25 @@ video {
 @font-face {
   font-family: "Libre Barcode 39 Text";
 
-  src: url(/resources/assets/fonts/LibreBarcode39Text-Regular.ttf);
+  src: url(./resources/assets/fonts/LibreBarcode39Text-Regular.ttf);
 }
 
 @font-face {
   font-family: "Libre Barcode 39 Extended";
 
-  src: url(/resources/assets/fonts/LibreBarcode39Extended-Regular.ttf);
+  src: url(./resources/assets/fonts/LibreBarcode39Extended-Regular.ttf);
 }
 
 @font-face {
   font-family: "Major Mono Display";
 
-  src: url(/resources/assets/fonts/MajorMonoDisplay-Regular.ttf);
+  src: url(./resources/assets/fonts/MajorMonoDisplay-Regular.ttf);
 }
 
 @font-face {
   font-family: "Libre Baskerville";
 
-  src: url(/resources/assets/fonts/LibreBaskerville-Regular.ttf);
+  src: url(./resources/assets/fonts/LibreBaskerville-Regular.ttf);
 }
 
 *, ::before, ::after {
@@ -656,10 +656,6 @@ video {
   z-index: 20;
 }
 
-.z-50 {
-  z-index: 50;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -751,8 +747,8 @@ video {
   height: 1.5rem;
 }
 
-.h-60 {
-  height: 15rem;
+.h-72 {
+  height: 18rem;
 }
 
 .h-96 {
@@ -761,10 +757,6 @@ video {
 
 .h-\[2px\] {
   height: 2px;
-}
-
-.h-\[820px\] {
-  height: 820px;
 }
 
 .h-fit {
@@ -778,10 +770,6 @@ video {
 
 .h-screen {
   height: 100vh;
-}
-
-.h-72 {
-  height: 18rem;
 }
 
 .w-1\/2 {
@@ -928,10 +916,10 @@ video {
   justify-content: space-evenly;
 }
 
-.space-x-32 > :not([hidden]) ~ :not([hidden]) {
+.space-x-10 > :not([hidden]) ~ :not([hidden]) {
   --tw-space-x-reverse: 0;
-  margin-right: calc(8rem * var(--tw-space-x-reverse));
-  margin-left: calc(8rem * calc(1 - var(--tw-space-x-reverse)));
+  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
+  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
 }
 
 .space-x-7 > :not([hidden]) ~ :not([hidden]) {
@@ -962,18 +950,6 @@ video {
   --tw-space-y-reverse: 0;
   margin-top: calc(1rem * calc(1 - var(--tw-space-y-reverse)));
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
-}
-
-.space-x-10 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-x-reverse: 0;
-  margin-right: calc(2.5rem * var(--tw-space-x-reverse));
-  margin-left: calc(2.5rem * calc(1 - var(--tw-space-x-reverse)));
-}
-
-.space-y-7 > :not([hidden]) ~ :not([hidden]) {
-  --tw-space-y-reverse: 0;
-  margin-top: calc(1.75rem * calc(1 - var(--tw-space-y-reverse)));
-  margin-bottom: calc(1.75rem * var(--tw-space-y-reverse));
 }
 
 .space-y-6 > :not([hidden]) ~ :not([hidden]) {
@@ -1087,11 +1063,6 @@ video {
   padding-bottom: 0.25rem;
 }
 
-.py-1\.5 {
-  padding-top: 0.375rem;
-  padding-bottom: 0.375rem;
-}
-
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1110,10 +1081,6 @@ video {
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
-}
-
-.pb-40 {
-  padding-bottom: 10rem;
 }
 
 .pl-6 {
@@ -1156,6 +1123,11 @@ video {
   font-family:  "Major Mono Display" , monospace;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-3xl {
   font-size: 1.875rem;
   line-height: 2.25rem;
@@ -1194,11 +1166,6 @@ video {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-2xl {
-  font-size: 1.5rem;
-  line-height: 2rem;
 }
 
 .font-bold {
@@ -1322,7 +1289,7 @@ video {
 
 body {
   background-color: #e5dddb;
-  background-image: url("/resources/assets/img/texture.svg");
+  background-image: url("./resources/assets/img/texture.svg");
 }
 
 ::-webkit-scrollbar {
