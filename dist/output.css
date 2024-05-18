@@ -1289,8 +1289,7 @@ video {
 
 body {
   background-color: #e5dddb;
-  /* background-image: url("/resources/assets/img/texture.svg"); */
-  background-image: url("../../resources/assets/img/texture.svg");
+  background-image: url("../assets/img/texture.svg");
 }
 
 ::-webkit-scrollbar {
