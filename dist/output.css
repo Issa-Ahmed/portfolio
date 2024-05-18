@@ -449,25 +449,25 @@ video {
 @font-face {
   font-family: "Libre Barcode 39 Text";
 
-  src: url(./resources/assets/fonts/LibreBarcode39Text-Regular.ttf);
+  src: url(../assets/fonts/LibreBarcode39Text-Regular.ttf);
 }
 
 @font-face {
   font-family: "Libre Barcode 39 Extended";
 
-  src: url(./resources/assets/fonts/LibreBarcode39Extended-Regular.ttf);
+  src: url(../assets/fonts/LibreBarcode39Extended-Regular.ttf);
 }
 
 @font-face {
   font-family: "Major Mono Display";
 
-  src: url(./resources/assets/fonts/MajorMonoDisplay-Regular.ttf);
+  src: url(../assets/fonts/MajorMonoDisplay-Regular.ttf);
 }
 
 @font-face {
   font-family: "Libre Baskerville";
 
-  src: url(./resources/assets/fonts/LibreBaskerville-Regular.ttf);
+  src: url(../assets/fonts/LibreBaskerville-Regular.ttf);
 }
 
 *, ::before, ::after {
@@ -1289,7 +1289,7 @@ video {
 
 body {
   background-color: #e5dddb;
-  background-image: url("./resources/assets/img/texture.svg");
+  background-image: url("../assets/img/texture.svg");
 }
 
 ::-webkit-scrollbar {
