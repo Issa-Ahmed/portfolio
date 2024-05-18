@@ -225,7 +225,7 @@ gsap.fromTo(".contact-title", {
 gsap.fromTo(".contact-form", {
     y: "100%", // Move text off-screen initially
   }, {
-    duration: 1,
+    duration: 0.5,
     delay:0.6,
     y: 0, // Move text to the top
     ease: "power2.out", // Ease-out animation
